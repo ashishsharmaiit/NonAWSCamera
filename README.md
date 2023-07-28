@@ -36,4 +36,6 @@ Now, you can move to the next step. Please Note that you should open the python 
 
 7. **Select Stun server check box and click on Start. You should see the image now from the other peer.**
 
-8. **To exit python code, you will need to press ctrl-z. But once you exit, the camera might still be accessible by python script, and if you run this script again you might get the error, that camera is not accessile. To disable camera being handled by previous process, type lsof /dev/video0 and then you will get process ID (PID), then type kill -9 <PID> and it will kill the process. Then you can do this again.**
+8. **To exit python code, you will need to press ctrl-c twice.**
+  
+10. **Debug Tip - If you exit with ctrl-z or any other process, the camera might still be accessible by python script, and if you run this script again you might get the error, that camera is not accessile. To disable camera being handled by previous process, type lsof /dev/video0 and then you will get process ID (PID), then type kill -9 <PID> and it will kill the process. Then you can do this again.**
